@@ -1,6 +1,6 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Colors from "../../constants/colors";
+import { View, Text, StyleSheet } from 'react-native';
+
+import Colors from '../../constants/colors';
 
 function NumberContainer({ children }) {
   return (
@@ -10,6 +10,8 @@ function NumberContainer({ children }) {
   );
 }
 
+export default NumberContainer;
+
 const styles = StyleSheet.create({
   container: {
     borderWidth: 4,
@@ -17,14 +19,13 @@ const styles = StyleSheet.create({
     padding: 24,
     margin: 24,
     borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   numberText: {
     color: Colors.accent500,
     fontSize: 36,
-    fontFamily: "open-sans-bold",
+    // fontWeight: 'bold',
+    fontFamily: 'open-sans-bold'
   },
 });
-
-export default NumberContainer;

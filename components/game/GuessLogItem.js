@@ -1,6 +1,6 @@
-import React from "react";
-import { Text, View, StyleSheet } from "react-native";
-import Colors from "../../constants/colors";
+import { View, Text, StyleSheet } from 'react-native';
+
+import Colors from '../../constants/colors';
 
 function GuessLogItem({ roundNumber, guess }) {
   return (
@@ -11,6 +11,8 @@ function GuessLogItem({ roundNumber, guess }) {
   );
 }
 
+export default GuessLogItem;
+
 const styles = StyleSheet.create({
   listItem: {
     borderColor: Colors.primary800,
@@ -19,21 +21,16 @@ const styles = StyleSheet.create({
     padding: 12,
     marginVertical: 8,
     backgroundColor: Colors.accent500,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "100%",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
     elevation: 4,
-    shadowColor: "black",
-    shadowOffset: {
-      width: 0,
-      height: 0,
-    },
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.25,
     shadowRadius: 3,
   },
   itemText: {
-    fontFamily: "open-sans",
-  },
+    fontFamily: 'open-sans'
+  }
 });
-
-export default GuessLogItem;
